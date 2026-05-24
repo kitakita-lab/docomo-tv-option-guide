@@ -712,6 +712,45 @@ body {
   line-height: 1.7;
 }
 
+/* 奇数枚目で終わる場合は最後のカードを全幅に */
+.merits-grid .merit-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
+/* ===========================
+   Official Note
+   =========================== */
+.official-note {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  margin-top: var(--space-3);
+}
+
+.official-note-icon {
+  font-size: 13px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.official-note-text {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-sub);
+  line-height: 1.7;
+}
+
+.official-note-sub {
+  display: block;
+  font-size: 11px;
+  color: var(--color-text-sub);
+  opacity: 0.7;
+  margin-top: 2px;
+}
+
 /* Hokkaido */
 .hokkaido-block {
   margin-top: var(--space-6);
