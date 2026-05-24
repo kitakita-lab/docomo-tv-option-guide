@@ -588,6 +588,79 @@ body {
 }
 
 /* ===========================
+   Check Section（受付前にここだけ確認）
+   =========================== */
+.check-section {
+  margin-top: var(--space-8);
+  padding-top: var(--space-8);
+  border-top: 1px solid var(--color-border);
+}
+
+.check-section-head {
+  margin-bottom: var(--space-5);
+}
+
+.check-section-title {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  margin-bottom: var(--space-1);
+  color: var(--color-text);
+}
+
+.check-section-sub {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-sub);
+  line-height: 1.7;
+}
+
+.check-cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.check-card {
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-5);
+  border: 1px solid transparent;
+}
+
+.check-card.check-gray {
+  background: var(--color-bg);
+  border-color: var(--color-border);
+}
+
+.check-card.check-blue {
+  background: var(--color-accent-dim);
+  border-color: rgba(10,122,232,0.15);
+}
+
+.check-card.check-yellow {
+  background: #fffbeb;
+  border-color: rgba(255,149,0,0.2);
+}
+
+.check-card-icon {
+  font-size: 20px;
+  margin-bottom: var(--space-2);
+  line-height: 1;
+}
+
+.check-card-title {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.check-card-body {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-sub);
+  line-height: 1.8;
+}
+
+/* ===========================
    Section 02 – Misconceptions
    =========================== */
 .misconceptions-list {
