@@ -940,6 +940,60 @@ body {
 }
 
 /* ===========================
+   Check List（箇条書き inside check-card）
+   =========================== */
+.check-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.check-list li {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-sub);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  line-height: 1.65;
+}
+
+.check-list li::before {
+  content: "•";
+  color: var(--color-accent);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* NG/OK 表現集 */
+.ng-ok-row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-sub);
+  line-height: 1.65;
+}
+
+.ng-label,
+.ok-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 18px;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #fff;
+}
+
+.ng-label { background: var(--color-ng); }
+.ok-label { background: var(--color-ok); }
+
+/* ===========================
    Section 04 – Skyperfect (simplified)
    =========================== */
 .sky-simple {
